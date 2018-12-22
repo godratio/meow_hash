@@ -1,3 +1,5 @@
+#if !defined(MEOW_HASH_H)
+
 /* ========================================================================
 
    Meow - A Fast Non-cryptographic Hash
@@ -253,3 +255,7 @@ MeowHash_Accelerated(meow_u64 Seed, meow_u64 TotalLengthInBytes, void *SourceIni
     
     return(Result);
 }
+
+#define MEOW_HASH_H
+#endif
+
